@@ -12,5 +12,5 @@ Third assignment for Scripting languages classes.
   - rasa run
   - python3 discordAPI/chatbot.py
  
-Chatbot allows you to check schedule for invented tournaments, see what games will be played, and add player to a tournament for a specific game. 
+Chatbot allows you to check schedule of imaginary tournaments, see what games will be played, and add player to a tournament for a specific game. 
 When a player is added to a tournament, they are given a number and start time information.
