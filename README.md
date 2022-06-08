@@ -2,9 +2,9 @@
 Third assignment for Scripting languages classes.
 
 Prerequisites:
- Discord bot -> create .env file in the discordAPI directory and set DISCORD_TOKEN
- Discord library -> __pip install discord.py__
- Rasa library -> __pip install rasa__
+ - Discord bot -> create .env file in the discordAPI directory and set DISCORD_TOKEN
+ - Discord library -> __pip install discord.py__
+ - Rasa library -> __pip install rasa__
  
  How to run:
   Three command line windows with the following commands sequentially in them:
