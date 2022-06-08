@@ -9,7 +9,7 @@ Third assignment for Scripting languages classes.
  ## How to run:
   Three command line windows with the following commands sequentially in them:
   - rasa run actions
-  - rasa shell
+  - rasa run
   - python3 discordAPI/chatbot.py
  
 Chatbot allows you to check schedule for invented tournaments, see what games will be played, and add player to a tournament for a specific game. 
