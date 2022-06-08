@@ -89,14 +89,13 @@ class ActionAddToTournament(Action):
                 json.dump(data, file, indent=4, sort_keys=True)
                 file.close()
 
-                start_time = ''
                 day_name = date.today().strftime("%A")
                 for day in data['schedule']:
                     if day['name'] == day_name:
                         start_time = day['begins']
                         break
 
-                reply = "are you good and prepared, young chum? the tournament begins at {start_time}!\n"
+                reply = f"are you good and prepared, young chum? the tournament begins at {start_time}:00!\n"
                 reply += f"you are #{game['current_players']} on list"
                 dispatcher.utter_message(text=reply)
                 return []
