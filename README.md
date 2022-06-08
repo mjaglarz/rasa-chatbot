@@ -1,12 +1,12 @@
 # Rasa based chatbot in Python
 Third assignment for Scripting languages classes.
 
-Prerequisites:
- - Discord bot -> create .env file in the discordAPI directory and set DISCORD_TOKEN
- - Discord library -> __pip install discord.py__
- - Rasa library -> __pip install rasa__
+## Prerequisites:
+ 1. Discord bot -> create .env file in the discordAPI directory and set DISCORD_TOKEN
+ 2. Discord library -> __pip install discord.py__
+ 3. Rasa library -> __pip install rasa__
  
- How to run:
+ ## How to run:
   Three command line windows with the following commands sequentially in them:
   - rasa run actions
   - rasa shell
