@@ -1,0 +1,54 @@
+version: "3.1"
+
+stories:
+
+- story: show schedule
+  steps:
+  - intent: get_schedule
+  - action: action_show_schedule
+
+- story: show available games
+  steps:
+  - intent: get_available_games
+  - action: action_show_available_games
+
+- story: play lol
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_wanna_play
+  - intent: affirm
+  - action: utter_what_game
+  - action: action_show_available_games
+  - intent: lol_game
+  - action: action_add_to_tournament
+
+- story: play csgo
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_wanna_play
+  - intent: affirm
+  - action: utter_what_game
+  - action: action_show_available_games
+  - intent: csgo_game
+  - action: action_add_to_tournament
+
+- story: play fifa
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_wanna_play
+  - intent: affirm
+  - action: utter_what_game
+  - action: action_show_available_games
+  - intent: fifa_game
+  - action: action_add_to_tournament
+
+- story: don't want to play game
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_wanna_play
+  - intent: deny
+  - action: utter_ok

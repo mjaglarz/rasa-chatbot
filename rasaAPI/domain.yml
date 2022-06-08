@@ -1,0 +1,41 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - get_schedule
+  - lol_game
+  - csgo_game
+  - fifa_game
+  - get_available_games
+
+actions:
+  - action_show_schedule
+  - action_show_available_games
+  - action_add_to_tournament
+
+responses:
+  utter_greet:
+  - text: "ayo, wassup"
+
+  utter_wanna_play:
+  - text: "wanna play something?"
+
+  utter_what_game:
+  - text: "what you want to play?"
+
+  utter_ok:
+  - text: "ok"
+
+  utter_goodbye:
+  - text: "get back here, or I'll hunt you down myself"
+
+  utter_iamabot:
+  - text: "of course I am not a bot, lol"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

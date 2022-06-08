@@ -1,0 +1,100 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - hey
+    - ay
+    - ayo
+    - wassup
+    - hey dude
+
+- intent: goodbye
+  examples: |
+    - bye
+    - bye bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - see you later
+    - see you soon
+    - later
+    - see ya
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - ye
+    - indeed
+    - of course
+    - that sounds good
+    - that sounds great
+    - sounds good
+    - seems okay
+    - ok
+    - k
+    - correct
+    - yup
+    - exactly
+    - true
+    - cool
+    - nice
+    - okay
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: get_schedule
+  examples: |
+    - show schedule
+    - when the game will start
+    - what are the plans
+    - when are we playing
+    - when are we going to play
+
+- intent: lol_game
+  examples: |
+    - lol
+    - league of legends
+    - league
+
+- intent: csgo_game
+  examples: |
+    - cs
+    - csgo
+    - cs:go
+    - counter strike
+    - counter strike global offensive
+
+- intent: fifa_game
+  examples: |
+    - fifa
+    - fifa22
+    - fifa 22
+
+- intent: get_available_games
+  examples: |
+    - what are we playing
+    - what tournaments are right now
+    - are there any tournaments
+    - what can I play

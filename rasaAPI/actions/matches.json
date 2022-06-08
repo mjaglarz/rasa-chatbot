@@ -1,0 +1,59 @@
+{
+    "games": [
+        {
+            "available": true,
+            "current_players": 0,
+            "max_players": 40,
+            "name": "League of Legends"
+        },
+        {
+            "available": true,
+            "current_players": 0,
+            "max_players": 20,
+            "name": "Counter Strike: Global Offensive"
+        },
+        {
+            "available": true,
+            "current_players": 0,
+            "max_players": 16,
+            "name": "Fifa 22"
+        }
+    ],
+    "schedule": [
+        {
+            "ends": 21,
+            "name": "Monday",
+            "begins": 19
+        },
+        {
+            "ends": 20,
+            "name": "Tuesday",
+            "begins": 18
+        },
+        {
+            "ends": 21,
+            "name": "Wednesday",
+            "begins": 18
+        },
+        {
+            "ends": 20,
+            "name": "Thursday",
+            "begins": 19
+        },
+        {
+            "ends": 22,
+            "name": "Friday",
+            "begins": 17
+        },
+        {
+            "ends": 22,
+            "name": "Saturday",
+            "begins": 15
+        },
+        {
+            "ends": 21,
+            "name": "Sunday",
+            "begins": 17
+        }
+    ]
+}

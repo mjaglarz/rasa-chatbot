@@ -1,0 +1,94 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: check schedule
+  steps:
+  - user: |
+      what are the plans
+    intent: get_schedule
+  - action: action_show_schedule
+
+- story: check available games
+  steps:
+  - user: |
+      are there any tournaments
+    intent: get_available_games
+  - action: action_show_available_games
+
+- story: play lol
+  steps:
+  - user: |
+      ay
+    intent: greet
+  - action: utter_greet
+  - action: utter_wanna_play
+  - user: |
+      yeah
+    intent: affirm
+  - action: utter_what_game
+  - action: action_show_available_games
+  - user: |
+      lol
+    intent: lol_game
+  - action: action_add_to_tournament
+
+- story: play csgo
+  steps:
+  - user: |
+      hey
+    intent: greet
+  - action: utter_greet
+  - action: utter_wanna_play
+  - user: |
+      y
+    intent: affirm
+  - action: utter_what_game
+  - action: action_show_available_games
+  - user: |
+      csgo
+    intent: csgo_game
+  - action: action_add_to_tournament
+
+- story: play fifa
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - action: utter_wanna_play
+  - user: |
+      yes
+    intent: affirm
+  - action: utter_what_game
+  - action: action_show_available_games
+  - user: |
+      fifa
+    intent: fifa_game
+  - action: action_add_to_tournament
+
+- story: play fifa
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - action: utter_wanna_play
+  - user: |
+      no
+    intent: deny
+  - action: utter_ok
+
+- story: say goodbye
+  steps:
+  - user: |
+      see ya
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      are you a human?
+    intent: bot_challenge
+  - action: utter_iamabot
